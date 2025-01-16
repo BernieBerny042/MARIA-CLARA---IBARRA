@@ -1,0 +1,290 @@
+@font-face {
+	font-family: myFont;
+	src:url(Agreloy.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: 5s ease;
+}
+body {
+	min-height: 80vh;
+	display: grid;
+	place-items: center;
+	gap: 4rem;
+	background: #b8860b;
+}
+#grid {
+	width: calc(100% - 30vmin);
+	aspect-ratio: 16 / 7;
+	background: linen;
+	display: grid;
+	grid-template-columns: 1fr 0fr 1fr;
+	place-items: center;
+	outline: 2px solid #804a00;
+	border-radius: 5vmin;
+	box-shadow: 0 1rem 2rem -1rem rgba(68 50 4 / 1);
+	overflow: hidden;
+}
+.left,
+.right,
+.middle {
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	transform-origin: center;
+}
+.left {
+	background-image: url("https://ih1.redbubble.net/image.5373189186.8544/flat,750x,075,f-pad,750x1000,f8f8f8.jpg");
+	border-right: 10px solid #804a00;
+}
+.middle {
+	font-size: 0rem;
+	background-image: url("https://static.wikia.nocookie.net/drama/images/1/10/Maria_Clara_at_Ibarra_poster.jpg/revision/latest/scale-to-width-down/1000?cb=20230305101106");
+}
+.right {
+	background-image: url("https://ih1.redbubble.net/image.5373189186.8544/flat,750x,075,f-pad,750x1000,f8f8f8.jpg");
+	border-left: 10px solid #804a00;
+}
+
+#grid:hover {
+	grid-template-columns: 0fr 1fr 0fr;
+}
+{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Algerian";
+}
+
+.navMenu {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+	
+.navMenu a {
+  color: #f6f4e6;
+  font-family: Algerian;
+  text-decoration: none;
+  font-size: 1.0em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #966919;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+h1	{
+	color: white;
+	font-family: myFont;
+	text-transform: uppercase;
+	text-shadow: 5px 3px purple;
+	 font-size: 30pt;
+
+}
+h3	{
+	color: black;
+	font-family: myFont;
+	text-transform: uppercase;
+	text-shadow: 3px 2px orange;
+	font-size: 20pt;
+
+}
+h2	{
+	color: white;
+	font-family: myFont;
+	text-transform: uppercase;
+	text-shadow: 3px 2px orange;
+	font-size: 20pt;
+
+}
+p	{
+	color: white;
+	font-family: Times New Roman;
+	text-shadow: 2px 1px purple;
+	font-size: 15pt;	
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#Frames, .Frame {
+	list-style: none;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#Frames {
+  margin: 5% 0;
+	width: 100%;
+}
+.Frame {
+	display: inline-block;
+	padding: 40px;
+	border-width: 20px;
+	border-style: solid;
+	border-color: #2F2D2D #434040 #4F4C4C #434040;
+	background: #f5f5f5;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#E5E4DF), to(#CDCDC6));
+	background-image: -webkit-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: -moz-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: -o-linear-gradient(#E5E4DF, #CDCDC6);
+	background-image: linear-gradient(#E5E4DF, #CDCDC6);
+	box-shadow: inset 0 2px 5px rgba(0,0,0,.6),0 5px 2px rgba(0,0,0,.1), 0 10px 20px rgba(0,0,0,.8);
+	position: relative;
+	overflow: hidden;
+}
+.Frame::before {
+	content: "";
+	position: absolute;
+	top: -175px;
+	right: -20%;
+	width: 400px;
+	height: 400px;
+	transform: rotateZ(-40deg);
+	-webkit-transform: rotateZ(-40deg);
+	-moz-transform: rotateZ(-40deg);
+	-o-transform: rotateZ(-40deg);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(255,255,255,.4)), to(rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+	background-image: linear-gradient(rgba(255,255,255,.4), rgba(255,255,255,0));
+}
+.Frame img {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #BBBAB4 #C7C7BF #E5E4DF #C7C7BF;
+	box-shadow:  0 -1px 1px rgba(0,0,0,.1), 0 1px 1px 1px rgba(255,255,255,.7);
+}
+table {
+  width: 95%;
+  background: black;
+}
+td, th {
+  border: 1px solid orange;
+  text-align: left;
+  padding: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.card-container {
+    display: flex;	
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card {
+    position: relative;
+    flex: 0 0 30%;
+    min-width: 250px;
+    height: 530px;
+    background: white;
+    overflow: hidden;
+    border: 1px solid #ccc; 
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+}
+
+.card .imgBx,
+.card .details {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.card .imgBx {
+    top: 0;
+    left: 0;
+}
+
+.card:hover .imgBx {
+    left: -100%;
+}
+
+.card .imgBx img {
+    width: 100%;
+}
+
+.card .details {
+    background: #804a00;
+    top: 0;
+    left: 100%;
+    padding: 60px 30px;
+}
+
+.card:hover .details {
+    left: 0;
+}
+
+.card .details h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 10px;
+    border-bottom: 2px solid white;
+}
+
+.card .details p {
+    margin: 20px 0 0;
+}
